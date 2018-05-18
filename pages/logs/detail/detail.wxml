@@ -1,0 +1,6 @@
+<view>
+  <image src='../../../img/detail.png' style='width: 100%'></image>
+  <view>
+    <text></text>
+  </view>
+</view>

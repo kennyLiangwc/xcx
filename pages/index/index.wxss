@@ -1,0 +1,3 @@
+/* pages/index/index.wxss */
+.flex-wrp {display: flex;}
+.flex-item{width: 33.33%;height: 300rpx}

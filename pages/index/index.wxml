@@ -1,0 +1,31 @@
+<!--pages/index/index.wxml-->
+<!-- <text>pages/index/index.wxml</text> -->
+
+<!-- <text bindtap='changeTextColor'>{{msg}}</text>
+
+<button type='default' bindtap='viewToMY'>跳转</button>
+<icon type='search' bindtap='toViewDetail'></icon> -->
+
+
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" >
+  <block wx:for="{{imgUrls}}" wx:key>
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="355" height="150" />
+    </swiper-item>
+  </block>
+</swiper>
+
+<view style='margin: 8rpx;'></view>
+
+<view class='section'>
+  <view style="flex-direction:row;" class="flex-wrp">
+    <view class='flex-item' style='overflow: hidden;'>
+      <view style='width: 100%;'>
+        <image src='../../img/1.jpg' mode="aspectFill"></image>
+      </view>
+    </view>
+    <view class='flex-item' style="background-color: green;">2</view>
+    <view class='flex-item' style="background-color: blue;">3</view>
+  </view>
+</view>     

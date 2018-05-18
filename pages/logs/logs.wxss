@@ -1,0 +1,23 @@
+/* pages/logs/logs.wxss */
+.section {
+  padding: 3%;
+}
+.flex-wrp {display: flex;}
+flex-item {
+  border-right: 1rpx solid #ccc;
+}
+
+ .bc_green {
+   width:25%; 
+   height: 200rpx;
+   line-height: 60rpx;
+   /* border-right: 1rpx solid #ccc; */
+   text-align: center;
+}
+.text_bor {
+    border-right: 1rpx solid #ccc;
+}
+
+
+.bc_red {width:25%; height: 200rpx;line-height: 60rpx;text-align: center;}
+.bc_blue {width:25%; height: 200rpx;line-height: 60rpx;text-align: center;}
