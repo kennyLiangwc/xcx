@@ -1,6 +1,7 @@
 /* pages/logs/logs.wxss */
 .section {
-  padding: 3%;
+  padding: 3% 3% 0 3%;
+  /*border-bottom: 1rpx solid #ccc;*/
 }
 .flex-wrp {display: flex;}
 flex-item {
@@ -9,15 +10,27 @@ flex-item {
 
  .bc_green {
    width:25%; 
-   height: 200rpx;
+   height: 190rpx;
    line-height: 60rpx;
    /* border-right: 1rpx solid #ccc; */
    text-align: center;
 }
 .text_bor {
     border-right: 1rpx solid #ccc;
+    font-size: 28rpx;
+    height: 54rpx;
 }
 
 
-.bc_red {width:25%; height: 200rpx;line-height: 60rpx;text-align: center;}
-.bc_blue {width:25%; height: 200rpx;line-height: 60rpx;text-align: center;}
+.bc_red {width:25%; height: 190rpx;line-height: 60rpx;text-align: center;}
+.bc_blue {width:25%; height: 190rpx;line-height: 60rpx;text-align: center;}
+
+.sel-border {
+  border-bottom: 1rpx solid red
+}
+.flex-item:active {
+  border-bottom: 1rpx solid red
+}
+.flex-item:select {
+  border-bottom: 1rpx solid green
+}

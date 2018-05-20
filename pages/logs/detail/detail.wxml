@@ -1,6 +1,14 @@
 <view>
   <image src='../../../img/detail.png' style='width: 100%'></image>
   <view>
-    <text></text>
+    <text>主播简介</text>
+    <text>主播昵称昵称：xxx</text>
+    <text>女</text>
+    <text>粉丝：14.8w</text>
+    <text>等级：</text>
+    <text>标签：
+      <text>彩妆控控、摄影师</text>
+    </text>
+    <text>复制浏览器</text>
   </view>
 </view>

@@ -1,19 +1,19 @@
 <view class="section">
   <!-- <view class="section__title">flex-direction: row</view> -->
-  <view class="flex-wrp" style="flex-direction:row;">
-    <view class="flex-item bc_green">
+  <view class="flex-wrp" style="flex-direction:row;" style="border-bottom: 1rpx solid #ccc">
+    <view class="flex-item bc_green"  bindtap="selBor"  data-testId="1" >
        <image src='../../img/maoyan_32.png' style="width: 100rpx;height: 100rpx"></image>
        <view class="text_bor">淘宝主播</view>
     </view>
-    <view class="flex-item bc_red">
+    <view class="flex-item bc_red" bindtap="selBor" data-testId="2">
        <image src='../../img/taopiaopiao_32.png' style="width: 100rpx;height: 100rpx"></image>
        <view class="text_bor">淘宝主播</view>
     </view>
-    <view class="flex-item bc_blue">
+    <view class="flex-item bc_blue" bindtap="selBor" data-testId="3">
       <image src='../../img/yupiaoer_32.png' style="width: 100rpx;height: 100rpx"></image>
        <view class="text_bor">淘宝主播</view>
     </view>
-    <view class="flex-item bc_green">
+    <view class="flex-item bc_green" bindtap="selBor" data-testId="4">
       <image src='../../img/douban_32.png' style="width: 100rpx;height: 100rpx"></image>
       <view class="text_bor">淘宝主播</view>
     </view>
