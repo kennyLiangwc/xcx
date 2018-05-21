@@ -1,12 +1,11 @@
-// pages/logs/logs.js
+// page/index/detail/detail.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    selIndex: 0,
-    fanIndex: 0
+  
   },
 
   /**
@@ -15,23 +14,7 @@ Page({
   onLoad: function (options) {
   
   },
-  toDetail() {
-    wx.navigateTo({
-      url: "/pages/logs/detail/detail?id=1"
-    })
-  },
-  selBor(event) {
-    let index = event.currentTarget.dataset.testid;
-    this.setData({
-      selIndex: index
-    })
-  },
-  selFan(event) {
-    let index = event.currentTarget.dataset.fanid;
-    this.setData({
-      fanIndex: index
-    })
-  },
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
@@ -79,5 +62,5 @@ Page({
    */
   onShareAppMessage: function () {
   
-  },
+  }
 })
