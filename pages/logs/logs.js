@@ -23,7 +23,8 @@ Page({
   selBor(event) {
     let index = event.currentTarget.dataset.testid;
     this.setData({
-      selIndex: index
+      selIndex: index,
+      list: []
     })
   },
   selFan(event) {
@@ -36,7 +37,23 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-  
+    const self = this;
+    wx.request({
+      url: 'https://qydata.club/yxserver/api/anchor/',
+      data: {
+        "page": 1,
+        "page_size": 20
+      },
+      header: {
+        'content-type': 'application/json' // 默认值
+      },
+      success(data) {
+        let whList = data.data.auctions;
+        self.setData({
+          list: whList
+        })
+      }
+    })
   },
 
   /**
@@ -71,7 +88,7 @@ Page({
    * 页面上拉触底事件的处理函数
    */
   onReachBottom: function () {
-  
+    console.log(1)
   },
 
   /**
